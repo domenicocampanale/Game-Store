@@ -1,0 +1,242 @@
+
+
+* {
+  padding: 0;
+  margin: 0;
+  color: #E8E8F2;
+  font-family: "Poppins";
+}
+
+
+html {
+  background-color: #010104;
+  margin-left: 48px;
+  margin-right: 48px;
+}
+
+
+
+
+
+/* Stili per gli elementi h2 */
+h2 {
+  color: blue; /* Cambia il colore del testo degli h2 */
+}
+
+
+h2 :hover {
+  transform: scale(1.1); /* Ingrandisce il pulsante al 110% del suo dimensionamento originale quando si passa sopra con il mouse */
+}
+
+a {
+  text-decoration: none;
+}
+
+
+
+
+
+h3 :hover {
+transform: scale(1.1);
+font-style: italic;
+  color: green;
+  
+
+}
+
+.cerchio {
+border-radius: 50%; /* Rende l'immagine con un bordo circolare */
+border: 2px solid tomato;
+}
+
+
+
+
+button {
+background-color: #4CAF50; /* Green */
+border: none;
+color: white;
+padding: 10px 20px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 16px;
+margin: 4px 2px;
+cursor: pointer;
+border-radius: 4px;
+transition: all 0.3s ease; /* Aggiunge una transizione fluida */
+}
+
+button:hover {
+transform: scale(1.1); /* Ingrandisce il pulsante al 110% del suo dimensionamento originale quando si passa sopra con il mouse */
+}
+
+
+
+
+table{
+
+  border-collapse: collapse;
+  width: 100%;
+  
+}
+
+th {
+
+  padding: 8px;
+  text-align: center;
+  border-bottom: 1px solid #DDD;
+  border-top: 1px solid #DDD;
+  }
+
+th:hover {background-color: purple;}
+
+tr:hover {background-color: #0D0D11;}
+
+/*img:hover {background-color: pink;}*/
+
+
+.navbar {
+  background-color: #0D0D11;
+  padding: 16px;
+}
+
+
+
+
+.remove-link {
+  text-decoration: none;
+  position: relative;
+ 
+}
+
+.navbar-link {
+  font-size: larger;  
+}
+
+.navbar-color {
+  color: black;
+}
+
+
+.container {
+width: 800px;
+margin: 0 auto;
+}
+
+
+
+
+
+.element {
+background: linear-gradient(to right, #ff9966 50%, transparent 50%);
+background-size: 200% 100%;
+transition: background-position 0.5s;
+text-align: center;
+margin-bottom: 20px;
+}
+
+.element:hover {
+background-position: -100% 0;
+}
+
+.spazio {
+padding-bottom: 42px;
+}
+
+
+
+.spazio:hover {
+color: blue;
+animation: shake 0.5s ease-in-out;
+}
+
+@keyframes shake {
+0% { transform: translateX(0); }
+25% { transform: translateX(-5px); }
+50% { transform: translateX(5px); }
+75% { transform: translateX(-5px); }
+100% { transform: translateX(0); }
+}
+
+
+
+
+.rotating-image {
+transition: transform 0.5s ease; /* Aggiunge una transizione fluida all'animazione */
+}
+
+.rotated {
+transform: rotate(360deg); /* Ruota l'immagine di 360 gradi */
+}
+
+
+
+
+
+
+/*Icone social */
+.social-icons {
+list-style: none;
+padding: 0;
+margin: 0;
+}
+.social-icons li {
+display: inline-block;
+margin-right: 10px;
+}
+.social-icons li a {
+display: block;
+width: 50px;
+height: 50px;
+line-height: 50px;
+text-align: center;
+border-radius: 50%;
+background-color: #ccc;
+color: #fff;
+transition: background-color 0.3s;
+}
+.social-icons li a:hover {
+background-color: #333;
+}
+.fa {
+font-size: 24px;
+}
+
+
+
+
+
+ /* Stili per la cornice */
+ .cornice {
+  border: 4px solid turquoise;
+  padding: 20px;
+  margin: 20px;
+  background-color: #0D0D11;
+  border-radius: 10px; /* Arrotonda i bordi della cornice */
+}
+
+.cornice :hover {
+
+  font-style: italic;
+  color: green;
+  
+  
+}
+
+
+
+img:hover {
+  transform: scale(0.9); /* Rimpicciolisci l'immagine del 10% */
+  transition: all 0.3s ease; /* Aggiunge una transizione fluida */
+}
+
+
+
+
+
+
+
+
+
+  

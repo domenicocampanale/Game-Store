@@ -1,0 +1,119 @@
+
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Carrello</title>
+    <link rel="icon" type="Image/png" href="Immagini/icona.png" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="stylesricerca.css" />
+
+    <script type="module">
+      import { prendiGiochi } from "../Carrello/giochi.js";
+
+      const bottonePulisci = document.querySelector(".pulisci");
+
+      document.addEventListener("DOMContentLoaded", () => {
+        creaCarrello();
+      });
+
+      bottonePulisci.addEventListener("click", () => {
+        pulisci();
+      });
+
+      function creaCarrello() {
+        const divCarrello = document.querySelector(".carrello");
+        const giochi = prendiGiochi();
+
+        if (giochi.length > 0) {
+          for (let i = 0; i < giochi.length; i++) {
+            const divGioco = document.createElement("div");
+            const link = document.createElement("a");
+            const immagineGioco = document.createElement("img");
+            const nome = document.createElement("h2");
+            const prezzo = document.createElement("h3");
+            const piattaforme = document.createElement("p");
+
+            divGioco.className = "gioco";
+            divCarrello.appendChild(divGioco);
+
+            link.href = giochi[i].pagina;
+            divGioco.appendChild(link);
+
+            immagineGioco.src = giochi[i].immagine;
+            immagineGioco.style = "width: 200px";
+
+            link.appendChild(immagineGioco);
+
+            nome.textContent = giochi[i].nome;
+            prezzo.textContent = `${giochi[i].prezzo.toString()} €`;
+            piattaforme.textContent = `${giochi[i].piattaforme.join(", ")}`;
+
+            divGioco.appendChild(nome);
+            divGioco.appendChild(prezzo);
+            divGioco.appendChild(piattaforme);
+          }
+        }
+      }
+
+      function pulisci() {
+        const giochiPresi = prendiGiochi();
+        const divCarrello = document.querySelector(".carrello");
+
+        if (giochiPresi.length > 0) {
+          localStorage.removeItem("giochi");
+          divCarrello.replaceChildren();
+        }
+      }
+    </script>
+  </head>
+
+  <body>
+
+
+
+
+    <div class="navbar" >
+      <div>
+      
+          <img style="width: 64px; height: 64px ;" src="Immagini/icona.png " alt="Logo" class="rotating-image">
+  
+          
+          <div style="text-align: right;"> 
+              <button><a href="HomePage.html" target="_parent">Home-Page</a></button>
+              <button><a href="Tabellanuovi.html" target="_parent">Giochi nuovi</a></button>
+              <button><a href="Tabellanuovi.html" target="_parent">Giochi usati</a></button>
+          </div>
+  
+          </div>
+      </div>
+  
+
+    <div class="spazio">
+      <h1 style="color: yellow">Game Store</h1>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+   
+    <h2>Prodotti aggiunti al carrello:</h2>
+
+    <div class="carrello"></div>
+
+    <button class="pulisci">Pulisci carrello</button>
+
+    
+  </body>
+</html>
+

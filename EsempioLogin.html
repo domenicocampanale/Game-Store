@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Login</title>
+    <link rel="stylesheet" href="stylelogin.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" type="Image/png" href="Immagini/icona.png">
+  </head>
+
+
+
+
+
+<body>
+    <div class="container">
+    <div class="login">
+    <h2>LOGIN</h2>
+    <form id="loginForm">
+        <div class="input">
+        <label for="loginUsername">Username:</label>
+        <input type="text" id="loginUsername" placeholder="Nome Utente..." name="loginUsername" required>
+        </div>
+        <div class="input">
+        <label for="loginPassword">Password:</label>
+        <input type="password" id="loginPassword" placeholder="password..." name="loginPassword" required>
+        </div>
+        <div style="margin-top: 10px;">
+        <button type="button" onclick="loginUser()">Login</button>
+        </div>
+    </form>
+    <p>Oppure continua su</p>
+    
+   
+
+
+
+
+    <script>
+        function loginUser() {
+            const loginUsername = document.getElementById('loginUsername').value;
+            const loginPassword = document.getElementById('loginPassword').value;
+            const storedPassword = localStorage.getItem(loginUsername);
+            if (storedPassword && storedPassword === loginPassword) {
+                sessionStorage.setItem("isLogged", "true");
+                sessionStorage.setItem('loginUsername', loginUsername);
+                alert('Login avvenuto con successo!');
+                window.location.href = "HomePage.html";
+            } else {
+                alert('Credenziali non valide. Prova di nuovo.');
+            }
+        }
+    </script>
+
+
+   
+
+
+
+
+    <div class="icons">
+        <div class="img instagram-icon">
+            <a href="https://www.instagram.com/domenico_campanale__/" target="_self"><i class="fa fa-instagram"></i></a>
+        </div>
+        <div class="img">
+            <a href="https://github.com/domenicocampanale" target="_self"><img src="Immagini/Group.png" alt="github" /></a>
+        </div>
+        <div class="img">
+            <a href="https://www.facebook.com/profile.php?id=100005195115889" target="_self"><img src="Immagini/Group (1).png" alt="facebook" /></a>
+        </div>
+    </div>
+
+
+
+
+    <p>Non hai ancora un account? <span><a href="EsempioRegistrazione.html" target="_self">Registrati qui</a></span></p>
+    <p>Oppure non ti ricordi le credenziali? <span><a href="Credenziali.html" target="_self">Recuperale qui</a></span></p>
+    <p><a href="HomePage.html" target="_parent">Home Page</a></p>
+    </div>
+    </div>
+
+
+
+
+
+
+
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+

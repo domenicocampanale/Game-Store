@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Bioshock</title>
+    <link rel="icon" type="image/png" href="../Immagini/icona.png" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../stylesrecensioni.css" />
+
+    <script type="module">
+      import { aggiungiGioco } from "../Carrello/giochi.js";
+
+      const button = document.querySelector(".aggiungi");
+
+      button.addEventListener("click", () => {
+        aggiungiGioco(
+          "Bioshock",
+          ["Xbox 360  ", "PS3"],
+          10.0,
+          "Immagini/Foto giochi/Bioshock.jpg",
+          "./Giochi nuovi/Bioshock.html"
+        );
+      });
+    </script>
+
+    <style>
+      /* Stili CSS per il carrello */
+      #cart {
+        border: 1px solid #ccc;
+        padding: 10px;
+        margin-bottom: 20px;
+      }
+      #cart ul {
+        list-style-type: none;
+        padding: 0;
+      }
+      #cart li {
+        margin-bottom: 10px;
+      }
+
+      textarea {
+        color: black;
+      }
+    </style>
+  </head>
+
+  <body>
+
+    <div class="navbar" >
+      <div>
+      
+          <img style="width: 64px; height: 64px ;" src="../Immagini/icona.png " alt="Logo" class="rotating-image">
+  
+          
+          <div style="text-align: right;"> 
+              <button><a href="../HomePage.html" target="_parent">Home-Page</a></button>
+              <button><a href="../Carrello.html" target="_parent">Carrello</a></button>
+              <button><a href="../Tabellanuovi.html" target="_parent">Giochi nuovi</a></button>
+              <button><a href="../Tabellausati.html" target="_parent">Giochi usati</a></button>
+          </div>
+  
+          </div>
+      </div>
+  
+
+   
+     
+
+      
+
+
+
+  <div class="spazio">
+      <h1 style="color: yellow;">Game Store</h1>
+      
+  </div>
+
+    <img
+      src="../Immagini/Foto giochi/Bioshock.jpg"
+      alt="Bioshock"
+      width="200px"
+      height="200px"
+      style="border: 2px solid tomato"
+    />
+
+    <div style="height: 200px;">
+
+
+    </div>
+
+    <div id="reviews">
+      <div class="review">
+        <div class="loader"></div>
+        <p class="author">Mario Rossi</p>
+        <p class="date">27 febbraio 2024</p>
+        <p class="content">Rating: 4/5 ★</p>
+        <p class="content">
+          Il sito è fantastico! Ottimo servizio clienti e prodotti di alta
+          qualità.
+        </p>
+      </div>
+
+      <!-- Seconda recensione -->
+      <div class="review">
+        <p class="author">Anna Verdi</p>
+        <p class="date">25 febbraio 2024</p>
+        <p class="content">Rating: 3/5 ★</p>
+        <p class="content">
+          Esperienza molto positiva. Ho ricevuto la mia consegna in tempi brevi
+          e tutto era esattamente come descritto.
+        </p>
+      </div>
+
+      <!-- Aggiungi altre recensioni qui -->
+    </div>
+
+    <h1>Lascia una recensione:</h1>
+
+    <form id="reviewForm">
+      <label for="author">Nome:</label><br />
+      <input type="text" id="author" name="author" size="30" required /><br />
+      <label for="rating">Recensione (da 1 a 5 ★):</label><br />
+      <input
+        type="number"
+        id="rating"
+        name="rating"
+        min="1"
+        max="5"
+        required
+      /><br />
+      <label for="comment">Commento:</label><br />
+      <textarea
+        id="comment"
+        name="comment"
+        rows="4"
+        cols="50"
+        required
+      ></textarea
+      ><br />
+      <button type="submit">Invia Recensione</button>
+    </form>
+
+    <script src="../scriptrecensioni.js"></script>
+
+    <div style="height: 100px;"></div>
+
+    <button class="aggiungi">Aggiungi al carrello</button>
+
+
+    <div style="height: 148px;"></div>
+
+    
+  </body>
+</html>

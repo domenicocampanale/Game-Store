@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+
+            <title>Game Store.it - Videogiochi</title>
+            <link rel="icon" type="Image/png" href="Immagini/icona.png">
+
+
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+           
+            
+
+            
+            <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+            <link rel="stylesheet" href="styles.css">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+            <script src="scriptanimazioni.js"></script>
+           
+        </head>
+
+        <body>
+            
+
+            <div class="navbar" >
+                <div>
+                
+                    <img style="width: 64px; height: 64px;" src="Immagini/icona.png " alt="Logo" class="rotating-image">
+
+                    
+                    <div style="text-align: right;" id="accedi"> 
+                        <button id="accesso" onclick="login()">Login</button>
+                        <div>
+                         <button id="logOut">Logout</button>
+                         <script src="scriptbutton.js"></script>
+                        </div>
+                    </div>
+
+
+
+                    </div>
+                </div>
+
+               
+
+                
+
+
+
+            <div class="spazio">
+                <h1 style="color: yellow;">Game Store</h1>
+                
+            </div>
+
+            
+
+            
+            <div class="element"> <h2>Giochi usati</h2></div>
+
+            <div class="element"> <h2>Giochi nuovi</h2></div>
+            
+            
+             
+
+
+
+            <div class="spazio">
+
+                <h2>Su questo sito web vi è la possibilità di acquistare giochi tripla A e non a basso prezzo, sia nuovi di zecca che già usati ma in perfette condizioni. 
+                    Ecco alcune citazioni dei nostri giochi più amati dalla critica: </h2>
+            </div>
+
+
+
+
+
+    
+
+            
+
+
+
+            <div>
+                <h3 class="fade-in"><a href="https://it.wikipedia.org/wiki/Assassin%27s_Creed_II" target="_self">Le persone hanno poco tempo per giudicare, ma molto per correggersi(Ezio Auditore in Assassin's Creed 2)</a></h3>
+            
+                <div>
+                    <a href="Carrello.html" target="_self"><img class="slide" src="Immagini/assassin's creed 2 gif.gif"  alt="Assassin's creed 2" width="400px" height="20%" style="border: 2px solid tomato;" ></a>
+                </div> 
+            
+                <div class="loader2 fade-in"></div>
+            
+                <h3 class="fade-in"><a href="https://it.wikipedia.org/wiki/Half-Life_2" target="_self">L'uomo giusto nel posto sbagliato può cambiare il corso del mondo(Half-Life 2)</a></h3>
+               
+                <iframe style="float: right;" width="560" height="315" src="https://www.youtube.com/embed/NnOjolF0E3k?si=Np9M3jPLJjiO1WwP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                
+                <div>
+                    <a href="Carrello.html" target="_self"><img class="slide" src="Immagini/gif half-life 2.gif" alt="Half-Life 2"width="400px" height="20%" style="border: 2px solid tomato;"></a>
+                </div>
+            
+                <div class="loader fade-in"></div>
+            
+                <h3 class="fade-in"><a href="https://it.wikipedia.org/wiki/BioShock" target="_self"> Un uomo sceglie, uno schiavo obbedisce.(Andrew Ryan in Bioshock)</a></h3>
+            
+                <div>
+                    <a href="Carrello.html" target="_self"><img class="slide" src="Immagini/gif bioshock.webp" alt="Bioshock"width="400px" height="20%" style="border: 2px solid tomato;"></a>
+                </div>
+            </div>
+
+
+            
+
+
+
+
+
+            
+            <script>
+              // JavaScript per rilevare lo scroll e applicare l'effetto di transizione
+              window.addEventListener('scroll', function() {
+                var elements = document.querySelectorAll('.slide, .fade-in');
+                for (var i = 0; i < elements.length; i++) {
+                  var element = elements[i];
+                  if (isElementInViewport(element)) {
+                    element.classList.add('visible');
+                  }
+                }
+              });
+            
+              function isElementInViewport(element) {
+                var rect = element.getBoundingClientRect();
+                return (
+                  rect.top >= 0 &&
+                  rect.left >= 0 &&
+                  rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+                  rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+                );
+              }
+            </script>
+
+
+
+
+
+            <!--ANIMAZIONI-->
+            <div>
+                <a
+                href="Immagini/Foto carrello/Fifa 22 Finale.webp"
+                alt="Mythrill"
+                target="_blank"
+                >
+                <div class="card">
+                    <div class="wrapper">
+                    <img
+                        src="Immagini/Foto carrello/Fifa 22 Finale.webp"
+                        class="cover-image" alt="Fifa 22"
+                    />
+                    </div>
+                   
+                    <img
+                    src="Immagini/Foto carrello/Fifa 22 Hover.webp"
+                    class="character"
+                    />
+                </div>
+                </a>
+
+                <a
+                href="Immagini/Foto carrello/Resident Evil 8.jpeg"
+                alt="Mythrill"
+                target="_blank"
+                >
+                <div class="card">
+                    <div class="wrapper">
+                    <img
+                        src="Immagini/Foto carrello/Resident Evil 8.jpeg"
+                        class="cover-image"
+                    />
+                    </div>
+                   
+                    <img
+                    src="Immagini/Foto carrello/Resident Evil 8 hover.jpg"
+                    class="character"
+                    />
+                </div>
+                </a>
+
+
+                <a
+                href="Immagini/Foto carrello/Final Fantasy XV.jpg"
+                alt="Mythrill"
+                target="_blank"
+                >
+                <div class="card">
+                    <div class="wrapper">
+                    <img
+                        src="Immagini/Foto carrello/Final Fantasy XV.jpg"
+                        class="cover-image" alt="Fifa 22"
+                    />
+                    </div>
+                   
+                    <img
+                    src="Immagini/Foto carrello/Final Fantasy XV hover.jpeg"
+                    class="character"
+                    />
+                </div>
+                </a>
+            </div>
+
+    <!--ANIMAZIONI-->
+
+
+
+
+
+
+
+            <div>
+
+                <table>
+                    <tr>
+                        <th><h2><a href="Tabellausati.html" target="_self" class="remove-link" style="color: crimson;">Giochi usati</a></h2></th>
+                        <th><h2><a href="Tabellanuovi.html" target="_self" class="remove-link" style="color: crimson;">Giochi nuovi</a></h2></th>
+                        <th style="width: 200px; height: 100px;">
+                            <h2>
+                                <a href="Carrello.html" target="_self">
+                                    
+                                    <i style="color: greenyellow; font-size: 95px;" class="fa fa-shopping-cart" aria-hidden="true" alt="Carrello"></i></a>
+                            </h2>
+                        </th>
+                    </tr>
+                </table>
+
+            </div>
+
+
+            <div style="background-color: #010104; height: 100px;"></div>
+            <div class="spaziocontatti">
+                <img src="Immagini/gif.gif" alt="gif" width="100px" height="100px" style="float: right;">
+
+                
+
+            </div>
+
+
+
+            <footer class="footer-section">
+                <div class="container">
+                    <div class="footer-cta pt-5 pb-5">
+                        <div class="row">
+                            <div class="col-xl-4 col-md-4 mb-30">
+                                <div class="single-cta">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    
+                                </div>
+                            </div>
+                            <div class="col-xl-4 col-md-4 mb-30">
+                                <div class="single-cta">
+                                    <i class="fas fa-phone"></i>
+                                    <div class="cta-text">
+                                        <h4>Telefono</h4>
+                                        <span style="text-decoration: underline;">+39 3476626331</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-4 col-md-4 mb-30">
+                                <div class="single-cta">
+                                    <i class="far fa-envelope-open"></i>
+                                    <div class="cta-text">
+                                        <h4>E-mail</h4>
+                                        <span><a href="https://mail.google.com/mail/u/0/#inbox" target="_self">domenicocampanale113@gmail.com</a></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer-content pt-5 pb-5">
+                        <div class="row">
+                            <div class="col-xl-4 col-lg-4 mb-50">
+                                <div class="footer-widget">
+                                    
+                                   
+                                    <div class="footer-social-icon">
+                                        <span>Social:</span>
+                                        <ul class="social-icons">
+                                            <li><a href="https://www.instagram.com/domenico_campanale__/" target="_self" class="instagram"><i class="fab fa-instagram"></i></a></li>
+                                            <li><a href="https://www.facebook.com/profile.php?id=100005195115889" target="_self" class="facebook"><i class="fab fa-facebook-f"></i></a></li>
+                                            <li><a href="https://github.com/domenicocampanale" target="_self" class="github"><i class="fab fa-github"></i></a></li>
+                                           
+                                        </ul>
+                                       
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
+                                <div class="footer-widget">
+                                    <div class="footer-widget-heading">
+                                        <h3><a href="FAQ.html" target="_self">F.A.Q.</a></h3>
+                                    </div>
+                                </div>
+                                    
+                          
+                               
+                                   
+            </footer>
+
+
+
+
+
+
+
+          
+        </body>
+
+
+    </html>
+        
+
+
+

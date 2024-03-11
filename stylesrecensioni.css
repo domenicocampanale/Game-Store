@@ -1,0 +1,118 @@
+* {
+    padding: 0;
+    margin: 0;
+    color: #E8E8F2;
+    font-family: "Poppins";
+}
+
+
+html {
+    background-color: #010104;
+    margin-left: 48px;
+    margin-right: 48px;
+}
+
+
+img {
+    width: 400px;
+    height: 200px;
+    border-radius: 10px; 
+}
+
+input {
+    color: #010104;
+}
+
+
+img:hover {
+    transform: scale(0.9); /* Rimpicciolisci l'immagine del 10% */
+  }
+
+button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: all 0.3s ease; /* Aggiunge una transizione fluida */
+  }
+  
+  button:hover {
+    transform: scale(1.1); /* Ingrandisce il pulsante al 110% del suo dimensionamento originale quando si passa sopra con il mouse */
+  }
+
+  a {
+     text-decoration: none;
+  }
+
+
+.navbar {
+    background-color: #0D0D11;
+    padding: 16px;
+}
+
+.icon {
+    height: 64px;
+    width: 64px;
+}
+
+.remove-link {
+    text-decoration: none;
+}
+
+.navbar-link {
+    font-size: larger;  
+}
+
+.navbar-color {
+    color: blue;
+}
+
+
+.spazio {
+  padding-bottom: 42px;
+}
+
+/*stili per le recensioni*/
+.review {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+.review :hover {
+
+    transform: scale(0.9); /* Rimpicciolisci l'immagine del 10% */
+
+}
+
+.review .author {
+    font-weight: bold;
+}
+
+.review .date {
+    font-style: italic;
+    color: #888;
+}
+
+.review .content {
+    margin-top: 5px;
+}
+
+
+
+.rotating-image {
+    transition: transform 0.5s ease; /* Aggiunge una transizione fluida all'animazione */
+  }
+
+  .spazio {
+    padding-bottom: 42px;
+  }
+  

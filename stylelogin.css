@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", sans-serif;
+}
+
+body {
+  background: black
+    url("Immagini/Glass\ Effect\ Login\ Page\ -\ Original\ \(2\).png") no-repeat;
+  background-size: cover;
+  color: white;
+
+}
+
+a {
+  color: white;
+}
+
+
+button {
+  background-color: #bd0c47;
+  height: 40px;
+  padding: 10px;
+  color: white;
+  font-weight: 600;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease; /* Aggiunge una transizione fluida */
+}
+
+button:hover {
+  transform: scale(1.1); /* Ingrandisce il pulsante al 110% del suo dimensionamento originale quando si passa sopra con il mouse */
+}
+
+
+
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 10px;
+}
+.login {
+  width: 30%;
+  display: flex;
+  padding: 30px 40px;
+  flex-direction: column;
+  gap: 30px;
+
+  
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.input > input,
+button {
+  width: 100%;
+  height: 40px;
+  padding: 5px 10px;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+}
+
+.input > p {
+  font-weight: 300;
+}
+
+.login > p {
+  text-align: center;
+}
+
+
+
+ /* Stile generale per tutte le icone */
+ .icons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.icons .img {
+  display: flex;
+  align-items: center;
+  background: white;
+  justify-content: center;
+  width: 50px; /* Imposta la larghezza dei rettangoli bianchi */
+  height: 50px; /* Imposta l'altezza dei rettangoli bianchi */
+  border-radius: 10px;
+  cursor: pointer;
+  margin-right: 10px; /* Aggiunge spazio tra le icone */
+}
+
+.icons .img:hover {
+  transform: scale(1.1);
+}
+
+/* Stile specifico per l'icona Instagram */
+.icons .instagram-icon i {
+  font-size: 24px;
+  color: red;
+  transition: color 0.3s ease-in-out;
+}
+
+/* Effetto di hover per l'icona Instagram */
+.icons .instagram-icon i:hover {
+  color: darkred;
+}
+
+
+
+
+.password-container {
+  position: relative;
+}
+
+.password-toggle {
+  position: absolute;
+  right: 5px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
